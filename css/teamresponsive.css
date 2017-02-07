@@ -1,0 +1,51 @@
+@media screen and (max-width:650px){
+  .tskills{
+    font-size: 2em;
+  }
+
+  .tintro > .intro{
+    font-size: 1.5em;
+  }
+
+  .hello{
+    font-size: 2.5em;
+  }
+
+  .me{
+    font-size: 1.5em;
+  }
+  }
+
+  @media screen and (max-width:550px) {
+    .tskills{
+      font-size: 1.5em;
+    }
+
+    .tintro > .intro{
+      font-size: 1em;
+    }
+
+    .hello{
+      font-size:2em;
+    }
+
+    .me{
+      font-size: 1.5em;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .tskills{
+      font-size: 1.3em;
+    }
+  }
+
+  @media screen and (max-width:350px) {
+    .tintro > .qoute{
+      font-size: 2em;
+    }
+
+    .tskills{
+      font-size: 1.1em;
+    }
+  }

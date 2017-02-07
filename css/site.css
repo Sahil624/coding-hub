@@ -1,0 +1,603 @@
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+@keyframes appear
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+html,
+body
+{
+    margin: 0;
+}
+
+@keyframes dropHeader
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideright
+{
+    0%
+    {
+        transform: translateX(-200%);
+    }
+
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes moveup
+{
+    0%
+    {
+        transform: translateY(1000%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes zoomin
+{
+    0%
+    {
+        transform: translateZ(-300%);
+    }
+
+    100%
+    {
+        transform: translateZ(0%);
+    }
+}
+
+@keyframes colorone
+{
+    0%
+    {
+        background-color: turquoise;
+    }
+
+    100%
+    {
+        background-color: #37a99d;
+    }
+}
+header,
+footer
+{
+    display: inline-block;
+
+    width: 100%;
+    height: 20vh;
+
+    background-color: lightgray;
+}
+
+header
+{
+    box-shadow: 0 5px 3px;
+}
+
+
+.logo
+{
+    top: 25%;
+
+    width: 8%;
+    height: 75%;
+    margin-top: 20px;
+    margin-left: 15%;
+
+    animation-name: slideright;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+nav
+{
+    position: relative;
+
+    display: inline-block;
+    float: right;
+
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 5%;
+
+    animation-name: dropHeader;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+nav > ul > .navitem > li
+{
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+
+    display: inline;
+
+    padding: .8em;
+
+    color: red;
+}
+
+.burger
+{
+    display: none;
+}
+
+nav > ul > .navitem > li:hover
+{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+
+    color: #ccc;
+    border-radius: 15%;
+    background-color: gray;
+    box-shadow: 10px 10px 10px gray;
+}
+
+a
+{
+    font-size: 1em;
+
+    text-decoration: none;
+
+    color: rgba(36, 34, 34, .76);
+}
+
+/*a:hover{
+  color:  #CCCCCC;
+}*/
+
+.home
+{
+    /*  background: url(img/webbox.png) no-repeat center;*/
+    display: flex;
+
+    width: 100%;
+    height: 80vh;
+
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+
+    background: center fixed;
+}
+
+.opaced,
+.plain
+{
+    display: inline;
+
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.opaced
+{
+    width: 50%;
+    height: 80vh;
+    margin-left: 0;
+
+    opacity: .5;
+    background: white;
+}
+
+.opaced > .content > h1
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.opaced > p1
+{
+    font-family: 'Fjalla One', sans-serif;
+
+    margin: auto;
+}
+
+.content
+{
+    font-size: 20px;
+
+    width: 100%;
+    margin: auto;
+    padding-top: 15%;
+
+    text-align: center;
+
+    opacity: 1;
+    color: red;
+    background: transparent;
+}
+.plain
+{
+    width: 50%;
+    height: 100%;
+    margin-right: 0;
+}
+
+.gallery
+{
+    margin-top: 20%;
+    padding: 20%;
+}
+
+.gallery > img
+{
+    padding-bottom: 10%;
+}
+
+.about
+{
+    width: 100%;
+    height: 100vh;
+
+    animation-name: zoomin;
+    animation-duration: .6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+    background: url(img/developers.png) no-repeat center;
+}
+
+.intro
+{
+    margin-left: 10%;
+    padding-top: 3%;
+}
+.about > .intro > h1
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+
+    color: #503a3a;
+}
+
+.more
+{
+    width: 17.5%;
+    height: 5%;
+    margin-top: 10%;
+    margin-left: 20%;
+    padding: 10px;
+
+    cursor: pointer;
+    transition-duration: .5s;
+    transition-property: all;
+
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: white;
+}
+
+p2
+{
+    font-family: serif;
+    font-size: 2em;
+
+    margin-top: 1em;
+    padding: .5em;
+
+    transition-duration: 1s;
+    transition-property: all;
+    text-decoration: none;
+
+    color: black;
+}
+
+.more:hover
+{
+    background-color: black;
+}
+
+.more > p2:hover
+{
+    color: white;
+}
+/*
+.projects{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: url(img/maintainance.png) no-repeat center;
+}
+
+.project{
+  width: 20%;
+  margin-left: 20%;
+  height: 10%;
+  border: 2px solid black;
+  border-radius: 20%;
+  padding: 10px;
+  background-color: skyblue;
+  margin-top: 50%;
+}
+.opacedimg{
+  height: 100vh;
+  width: 50%;
+  margin-left: 0px;
+  background: white;
+  opacity: .5;
+}
+*/
+
+.team
+{
+    width: 100%;
+    height: 100vh;
+
+    opacity: .8;
+    background: url(img/team.jpeg) no-repeat center fixed;
+}
+
+
+
+.qoute
+{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+
+    margin-top: 0;
+
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    text-align: center;
+}
+
+.small
+{
+    font-size: .3em;
+
+    float: right;
+
+    margin-right: 10%;
+
+    text-align: right;
+}
+
+.read
+{
+    width: 39%;
+    height: 10%;
+    margin: auto;
+    margin-top: 15%;
+    padding: 10px;
+    padding-top: 1px;
+
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-property: all;
+    text-align: center;
+
+    color: white;
+}
+
+.read:hover
+{
+    color: black;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.services
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.services > .showcase
+{
+    display: flex;
+
+    width: 100%;
+}
+
+.showcase > .showimg > h2
+{
+    font-size: 2em;
+    color: #3f3f3f;
+    text-align: center;
+}
+
+.showcase > .showimg
+{
+    width: 33%;
+}
+
+.showcase > .showimg > .img
+{
+    width: 100%;
+}
+
+.contact
+{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+    background-color: #4a4646;
+}
+
+.contact > .interact
+{
+    width: 100%;
+    margin: auto;
+
+    text-align: center;
+
+    color: #cec4c4;
+}
+
+.contact > .interact > p1 > a
+{
+    color: #cec4c4;
+}
+
+.contact > .interact > h1
+{
+    font-size: 3em;
+}
+
+.contact > .interact > p1
+{
+    font-size: 2em;
+}
+
+/*Team CSS*/
+
+.tintro
+{
+    width: 100%;
+    height: 100%;
+
+    color: ghostwhite;
+    background-color: turquoise;
+}
+
+.tintro > .qoute
+{
+    padding-top: 20%;
+}
+
+.tintro > .burger
+{
+    display: block;
+}
+
+.tnavm
+{
+    position: fixed;
+    display: flex;
+    width: 25%;
+    font-size: 2em;
+}
+
+.back{
+  margin-right: 10%;
+}
+
+.tnavm > a
+{
+    color: black;
+    transition: ease all .5s;
+}
+
+.tnavm > a:hover{
+  font-size: 1.5em;
+  transition: ease all .5s;
+  border: 2px solid black;
+  border-radius: 30%;
+}
+
+.sahil
+{
+    height: 100vh;
+
+    animation-name: colorone;
+    animation-duration: .8s;
+    animation-timing-function: all;
+    animation-iteration-count: 1;
+
+    background: url(img/sahil.jpg) no-repeat center fixed;
+    background-color: #37a99d;
+}
+
+.tintro > .intro
+{
+    font-size: 2em;
+
+    padding-top: 8%;
+    padding-right: 10%;
+
+    text-align: center;
+}
+
+.tintro > .intro > .big
+{
+    font-size: 2.5em;
+}
+
+.hello
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3.5em;
+
+    padding-top: 20%;
+
+    text-align: center;
+}
+
+.me
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5em;
+
+    padding: 8%;
+    padding-top: 10%;
+
+    text-align: center;
+}
+
+.tskills
+{
+    font-size: 1.5em;
+
+    padding-top: 10px;
+}
+
+.sarav
+{
+    height: 100vh;
+
+    background: url(img/sarav.jpg) center no-repeat fixed;
+    background-color: #328078;
+}
+
+.malhotra
+{
+    height: 100vh;
+    color: cornsilk;
+    animation-name: slideright;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+
+    background: url(img/sam.jpg) center no-repeat fixed;
+    background-color: #4e8e87;
+}

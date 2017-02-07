@@ -1,0 +1,319 @@
+@media screen and (max-width:1000px) {
+  nav > ul > .navitem > li{
+    font-size: 1.3em;
+  }
+
+  p2{
+    font-size: 1.5em;
+  }
+
+  .read > h1{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width:850px) {
+  nav > ul > .navitem > li{
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .logo{
+    margin-left: 5%;
+    width: 20%;
+  }
+
+  nav{
+    width: 67%;
+    margin-top: 10%;
+  }
+
+  .read{
+    margin-top: 30%;
+  }
+
+  .more{
+    width: 20%;
+    height: 3%;
+  }
+}
+
+@media screen and (max-width:725px) {
+  .nav{
+    margin-left: 1%;
+  }
+
+  .logo{
+    margin-left: 5%;
+  }
+
+  .opaced > .content > h1{
+    font-size: 2.5em;
+  }
+
+  .content{
+    padding-top: 10%;
+  }
+
+  .about > .intro > h1{
+    font-size: 3.4em;
+    text-align: center;
+    padding-right: 10%;
+  }
+
+  .read{
+    margin-top: 0%;
+  }
+}
+
+@media screen and (max-width:675px) {
+  nav{
+    display: block;
+    margin: auto;
+    margin-top: 0%;
+    margin-right: 23%;
+    display: none;
+    position: relative;
+  }
+
+  body{
+    /*background-color: black*/
+  }
+
+  nav > ul > .navitem > li{
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  a{
+    color: black;
+  }
+
+  .burger{
+    display: block;
+    float: right;
+    margin-right: 20%;
+    margin-top: 5%;
+    width: 5%;
+  }
+
+  .show >.one , .two , .three{
+    border: 1px solid black;
+    width: 100%;
+    height: 0px;
+    margin-top: 20%;
+  }
+
+  @keyframes tone {
+    0%{
+      transform: rotateZ(5deg);
+    }
+
+    100%{
+      transform: rotateZ(45deg);
+    }
+  }
+
+  @keyframes tthree {
+    0%{
+      transform: rotateZ(-5deg);
+    }
+
+    100%{
+      transform: rotateZ(-45deg);
+    }
+  }
+
+  @keyframes ttwo {
+    0%{
+      opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+    }
+  }
+/*
+  @keyframes sone {
+    0%{
+      transform: rotateZ(-45deg);
+    }
+
+    100%{
+      transform: rotateZ(-5deg);
+    }
+  }*/
+  .hide >.one{
+    animation-name:tone;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    transform: rotate(45deg);
+    margin-top: 40%;
+  }
+
+  .hide >.three{
+    animation-name:tthree;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    transform: rotate(-45deg);
+    margin: -20%;
+    margin-left: 1%;
+  }
+
+  .hide > .two{
+    animation-name:ttwo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    opacity: 0;
+  }
+
+  .more{
+    width: 35%;
+  }
+
+  .read{
+    width: 60%;
+  }
+
+/*  .show > .one{
+    animation-name:sone;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    transform: rotate(0deg);
+    margin-top: 40%;
+  }*/
+}
+
+@media screen and (max-width:500px) {
+  .plain{
+    display: none;
+  }
+
+  .opaced{
+    width: 100%;
+  }
+
+  .services > .showcase > .showimg > .img{
+    display: none;
+    margin-top: 10%;
+  }
+
+  .services{
+    text-align: -webkit-center;
+  }
+
+.services > .showcase{
+  display: block;
+  margin: auto;
+  margin-left:
+}
+
+  .team > .qoute > h1{
+    padding-top: 20%;
+  }
+
+  .logo{
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .home{
+    background: center right 40% 0 transparent;
+  }
+
+  .burger{
+    margin-top: 8%;
+    height: 40%;
+    width: 12%;
+  }
+
+  .show >.one , .two , .three{
+    border: 2px solid black;
+    border-radius: 20%;
+  }
+
+  nav{
+    margin-right: 23%;
+  }
+
+  .hide > .three{
+    margin-top: -35%;
+  }
+
+  .about > .intro > h1{
+    font-size: 3em;
+  }
+
+  .more {
+    width: 37%;
+  }
+
+  .team > .qoute >h1{
+    font-size: 1.5em;
+  }
+
+  .read{
+    margin-top: 2%;
+    color: black;
+    width: 80%;
+    height: 5%;
+  }
+
+  .read:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .logo{
+    width: 25%;
+    margin-top: 2%;
+  }
+
+  footer{
+  font-size: .8em;
+  }
+
+  .services > h1{
+    font-size: 3.5em;
+  }
+
+  .services > .showcase > .showimg > h2{
+
+  }
+}
+
+@media screen and (max-width:350px) {
+  .about > .intro > h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.more {
+  width: 43%;
+}
+
+.qoute{
+  font-size: 2.5em;
+}
+
+.read{
+  width: 90%;
+}
+
+.small{
+  color: white;
+}
+}
+
+@media screen and (max-size:300px) {
+  .more{
+    width: 36%;
+  }
+}
