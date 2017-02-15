@@ -1,0 +1,29 @@
+{
+  "name": "codinghub",
+  "version": "1.0.0",
+  "description": "Website for Coding hub",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahil624/coding-hub.git"
+  },
+  "keywords": [
+    "Sahil"
+  ],
+  "author": "Sahil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sahil624/coding-hub/issues"
+  },
+  "homepage": "https://github.com/Sahil624/coding-hub#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.1.0"
+  },
+  "dependencies": {
+    "grunt-contrib-cssmin": "^2.0.0"
+  }
+}
